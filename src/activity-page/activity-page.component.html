@@ -7,101 +7,24 @@ padding-top: 20px;">
 </div>
 
 <div class="container">
-    <div class="row" style="background-color: blueviolet;background-color: #6b56b1;
+    <div class="row" *ngFor="let activity of activities" style="background-color: blueviolet;background-color: #6b56b1;
     border-radius: 10px;
     width: 90%;
-    height: 85px;
     margin: auto;
     margin-top: 10%;">
         <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/avatar.png" width="130%">
+            <img src="../assets/images/avatar.png" width="100%">
         </div>
-        <div class="col-6" style="color: white;align-items: center;display: flex;justify-content: center;">
+        <div class="col-6" style="color: white;align-items: center;display: flex;justify-content: center;text-align: center;">
             <div>
-                <label style="font-size: 16px;margin:auto">İstanbul/Ümraniye</label>
-                <label style="font-size: 13px;">Halı saha buluşması</label>
+                <label style="font-size: 16px;margin:auto">{{activity.ilIlce}}</label>
+                <label style="font-size: 11px;">{{activity.tema}}</label>
             </div>
         </div>
         <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/spor.png" width="105%">
+            <img src="../assets/images/spor.png" width="100%">
         </div>
-    </div>
-    <div class="row" style="background-color: blueviolet;background-color: #6b56b1;
-    border-radius: 10px;
-    width: 90%;
-    height: 85px;
-    margin: auto;
-    margin-top: 10%;">
-        <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/avatar.png" width="130%">
-        </div>
-        <div class="col-6" style="color: white;align-items: center;display: flex;justify-content: center;">
-            <div>
-                <label style="font-size: 16px;margin:auto">İstanbul/Ümraniye</label>
-                <label style="font-size: 13px;">Halı saha buluşması</label>
-            </div>
-        </div>
-        <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/spor.png" width="105%">
-        </div>
-    </div>
-    <div class="row" style="background-color: blueviolet;background-color: #6b56b1;
-    border-radius: 10px;
-    width: 90%;
-    height: 85px;
-    margin: auto;
-    margin-top: 10%;">
-        <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/avatar.png" width="130%">
-        </div>
-        <div class="col-6" style="color: white;align-items: center;display: flex;justify-content: center;">
-            <div>
-                <label style="font-size: 16px;margin:auto">İstanbul/Ümraniye</label>
-                <label style="font-size: 13px;">Halı saha buluşması</label>
-            </div>
-        </div>
-        <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/spor.png" width="105%">
-        </div>
-    </div>
-    <div class="row" style="background-color: blueviolet;background-color: #6b56b1;
-    border-radius: 10px;
-    width: 90%;
-    height: 85px;
-    margin: auto;
-    margin-top: 10%;">
-        <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/avatar.png" width="130%">
-        </div>
-        <div class="col-6" style="color: white;align-items: center;display: flex;justify-content: center;">
-            <div>
-                <label style="font-size: 16px;margin:auto">İstanbul/Ümraniye</label>
-                <label style="font-size: 13px;">Halı saha buluşması</label>
-            </div>
-        </div>
-        <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/spor.png" width="105%">
-        </div>
-    </div>
-    <div class="row" style="background-color: blueviolet;background-color: #6b56b1;
-    border-radius: 10px;
-    width: 90%;
-    height: 85px;
-    margin: auto;
-    margin-top: 10%;">
-        <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/avatar.png" width="130%">
-        </div>
-        <div class="col-6" style="color: white;align-items: center;display: flex;justify-content: center;">
-            <div>
-                <label style="font-size: 16px;margin:auto">İstanbul/Ümraniye</label>
-                <label style="font-size: 13px;">Halı saha buluşması</label>
-            </div>
-        </div>
-        <div class="col-3" style="align-items: center;display: flex;justify-content: center;">
-            <img src="../assets/images/spor.png" width="105%">
-        </div>
-    </div>
+    </div> 
 </div>
 
 <div class="navbar">
