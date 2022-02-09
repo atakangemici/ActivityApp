@@ -24,7 +24,6 @@ export class HomeComponent implements OnInit {
   goHome() {
     let mail = localStorage.getItem('email');
     let pass = localStorage.getItem('password');
-    let convert =String(mail);
     
     if(this.email == String(mail) && this.password == String(pass))
         this.route.navigateByUrl("/activity-page");
