@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from '../register/register.component';
 import { HomeComponent } from '../home/home.component';
 import { ActivityPageComponent } from '../activity-page/activity-page.component';
+import { FormsModule } from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ActivityPageComponent } from '../activity-page/activity-page.component'
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

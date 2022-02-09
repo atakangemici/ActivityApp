@@ -13,25 +13,25 @@ padding-top: 20px;">
 <div style="max-width: 80%;
   margin: auto;
   margin-top: 10%;">
-    <form>
-        <div class="form-group">
-            <label for="exampleInputEmail1" style="color: white;">Ad Soyad</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+<form #formName = 'ngForm'>            
+    <div class="form-group">
+            <label for="exampleInputEmail1" style="color: white;" >Kullanıcı Adı</label>
+            <input type="text" class="form-control" name="userName" [(ngModel)]="userName" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1" style="color: white;">E-Posta</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="email" class="form-control" name="email" [(ngModel)]="email" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1" style="color: white;">Şifre</label>
-            <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="password" class="form-control" name="password" [(ngModel)]="password" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div class="form-group">
             <label for="exampleInputEmail1" style="color: white;">Yeniden Şifre</label>
-            <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input type="password" class="form-control" name="retryPassword" [(ngModel)]="retryPassword" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
         <div style="text-align: center;">
-            <button type="submit" class="btn btn-lg customButton">Kaydol</button>
+            <button type="submit" class="btn btn-lg customButton" (click)="userRegister()">Kaydol</button>
         </div>
     </form>
 </div>
