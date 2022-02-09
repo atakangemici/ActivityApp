@@ -1,0 +1,53 @@
+<div style="text-align: center;
+border-bottom: 1px solid white;
+max-width: 90%;
+margin: auto;
+padding-top: 20px;">
+    <label style="color:white;">Event Time</label>
+</div>
+
+<div class="container" style="max-width: 80%;
+margin: auto;
+margin-top: 10%;">
+    <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1" style="color: white;">Açıklama</label>
+          <input type="text" class="form-control" [(ngModel)]="desc"  name="desc" id="desc" aria-describedby="emailHelp" >
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1" style="color: white;" >İl/İlçe</label>
+          <input type="text" name="citystate" [(ngModel)]="citystate"  class="form-control" id="citystate">
+        </div>      
+        <div class="form-group">
+            <label for="exampleInputPassword1" style="color: white;" >Konum/Yer</label>
+            <input type="text" name="place" [(ngModel)]="place"  class="form-control" id="place">
+          </div>  
+          <div class="form-group">
+            <label for="exampleInputPassword1" style="color: white;" >Tarih</label>
+            <input type="date" name="date" [(ngModel)]="date"  class="form-control" id="date">
+          </div>  
+          <div class="form-group">
+            <label for="exampleInputPassword1" style="color: white;" >Saat</label>
+            <input type="hour" name="hour" [(ngModel)]="hour"  class="form-control" id="hour">
+          </div>   
+          <div class="form-group">
+            <label for="exampleInputPassword1" style="color: white;" >Kisi Sayısı</label>
+            <input type="number" name="count" [(ngModel)]="count"  class="form-control" id="count">
+          </div>  
+        <div style="text-align: center;margin-top:12%;">
+          <div>
+            <button type="submit" class="btn btn-lg customButton" (click)="Save()">Oluştur</button>
+          </div>
+        </div>
+      </form>
+</div>
+
+<div class="navbar" style="border-top: 1px solid white;
+width: 90%;
+margin: auto;
+position: relative;
+margin-top: 15%;">
+    <a href="activity-page">Anasayfa</a>
+    <a href="add-activity" class="active">Etkinlik Oluştur</a>
+    <a href="activity-page">Profil</a>
+</div>
