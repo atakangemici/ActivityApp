@@ -6,14 +6,16 @@ import { AppComponent } from './app.component';
 import { RegisterComponent } from '../register/register.component';
 import { HomeComponent } from '../home/home.component';
 import { ActivityPageComponent } from '../activity-page/activity-page.component';
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { AddActivityComponent } from '../add-activity/add-activity.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     HomeComponent,
-    ActivityPageComponent
+    ActivityPageComponent,
+    AddActivityComponent
   ],
   imports: [
     BrowserModule,
